@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AA9CECDA-0CC9-42BA-9FCF-7E46C6D6B502}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Building Blocks", "Building Blocks", "{1F8DE0D8-1FDF-49C1-B23C-6C66F7667C81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AF493CFD-49B2-4215-9E25-883F2788B38E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonQueue.Worker", "src\services\AmazonQueue.Worker\AmazonQueue.Worker.csproj", "{566ADFBB-5B72-4AA8-BA18-421CA3A3EDEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageBus", "MessageBus", "{664F9824-03DB-4090-85A4-8CFD6B0D7BF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonQueue.MessageBus", "src\building blocks\AmazonQueue.MessageBus\AmazonQueue.MessageBus.csproj", "{4245C576-8D86-45CF-AAA1-3B6E4D4FA6C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazonQueue.Publisher", "src\services\AmazonQueue.Publisher\AmazonQueue.Publisher.csproj", "{5811801E-D1D4-494F-835B-6D4B186164BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{566ADFBB-5B72-4AA8-BA18-421CA3A3EDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566ADFBB-5B72-4AA8-BA18-421CA3A3EDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566ADFBB-5B72-4AA8-BA18-421CA3A3EDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566ADFBB-5B72-4AA8-BA18-421CA3A3EDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4245C576-8D86-45CF-AAA1-3B6E4D4FA6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4245C576-8D86-45CF-AAA1-3B6E4D4FA6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4245C576-8D86-45CF-AAA1-3B6E4D4FA6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4245C576-8D86-45CF-AAA1-3B6E4D4FA6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5811801E-D1D4-494F-835B-6D4B186164BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5811801E-D1D4-494F-835B-6D4B186164BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5811801E-D1D4-494F-835B-6D4B186164BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5811801E-D1D4-494F-835B-6D4B186164BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F8DE0D8-1FDF-49C1-B23C-6C66F7667C81} = {AA9CECDA-0CC9-42BA-9FCF-7E46C6D6B502}
+		{AF493CFD-49B2-4215-9E25-883F2788B38E} = {AA9CECDA-0CC9-42BA-9FCF-7E46C6D6B502}
+		{566ADFBB-5B72-4AA8-BA18-421CA3A3EDEB} = {AF493CFD-49B2-4215-9E25-883F2788B38E}
+		{664F9824-03DB-4090-85A4-8CFD6B0D7BF9} = {1F8DE0D8-1FDF-49C1-B23C-6C66F7667C81}
+		{4245C576-8D86-45CF-AAA1-3B6E4D4FA6C2} = {664F9824-03DB-4090-85A4-8CFD6B0D7BF9}
+		{5811801E-D1D4-494F-835B-6D4B186164BD} = {AF493CFD-49B2-4215-9E25-883F2788B38E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDD5E66D-5BE2-4D1E-882F-B00D5AE8A8D8}
+	EndGlobalSection
+EndGlobal
